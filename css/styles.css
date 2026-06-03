@@ -117,14 +117,20 @@ p{margin:0 0 1rem}
 
 /* Office cards */
 .office{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.office{overflow:hidden;padding:0}
+.office .office-body{padding:22px}
 .office h3{font-size:1.2rem}
 .office address{font-style:normal;color:var(--muted);margin:.5rem 0}
 .office a{font-weight:600}
+.office .map{width:100%;height:190px;border:0;display:block;filter:grayscale(40%) invert(0)}
 
 /* Team */
 .member{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-align:center}
 .member .ph{aspect-ratio:1/1;background:linear-gradient(135deg,#2a2f37,#1a1d22);display:flex;
   align-items:center;justify-content:center;font-family:var(--head);font-size:3rem;color:var(--gold);font-weight:700}
+.member-img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block;
+  filter:grayscale(18%) contrast(1.02)}
+.member:hover .member-img{filter:none}
 .member .body{padding:22px}
 .member .role{color:var(--gold-bright);font-weight:600;font-size:.85rem;font-family:var(--head);
   text-transform:uppercase;letter-spacing:.06em}
